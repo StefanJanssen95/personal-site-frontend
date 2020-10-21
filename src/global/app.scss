@@ -1,0 +1,52 @@
+/*
+  Global App CSS
+  ----------------------
+  Use this file for styles that should be applied to all components.
+  For example, "font-family" within the "body" selector is a CSS property
+  most apps will want applied to all components.
+
+  Any global CSS variables should also be applied here.
+*/
+
+@import "~normalize.css";
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url('../assets/fonts/jetbrains_mono/JetBrainsMono-Regular.eot');
+  src: url('../assets/fonts/jetbrains_mono/JetBrainsMono-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/jetbrains_mono/JetBrainsMono-Regular.woff2') format('woff2'),
+  url('../assets/fonts/jetbrains_mono/JetBrainsMono-Regular.woff') format('woff');
+  /*url('../assets/fonts/jetbrains_mono/JetBrainsMono-Regular.ttf') format('truetype'),*/
+  /*url('../assets/fonts/jetbrains_mono/JetBrainsMono-Regular.svg#ciclefina') format('svg');*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --page-background-color: #212121;
+  --page-font-color: #FFFFFF;
+  --grid-item-background-color: #303030;
+  --grid-item-background-color-accent: #424242;
+
+  --highlight-color-1: #01D1E5;
+  --highlight-color-2: #BADA55;
+  --highlight-color-3: #DO69EE;
+
+  --base-element-distance: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: JetBrainsMono, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-color: var(--page-background-color);
+  color: var(--page-font-color);
+}
+
+h1 {
+  margin: 0;
+}

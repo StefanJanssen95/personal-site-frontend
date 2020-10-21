@@ -1,0 +1,26 @@
+
+.profile-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card__image-container{
+  background-color: var(--grid-item-background-color-accent);
+  margin-bottom: var(--base-element-distance);
+  display: flex;
+}
+.profile-card__image{
+  width: 100%;
+}
+
+.profile-card__about {
+}
+
+.profile-card__about-title {
+  display: block;
+  background-color: var(--grid-item-background-color-accent);
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
