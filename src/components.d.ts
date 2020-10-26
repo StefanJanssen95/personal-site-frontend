@@ -16,6 +16,9 @@ export namespace Components {
     }
     interface AppSocialCard {
     }
+    interface AppSocialItem {
+        "icon": 'discord'|'steam';
+    }
     interface AppSummaryCard {
     }
 }
@@ -50,6 +53,12 @@ declare global {
         prototype: HTMLAppSocialCardElement;
         new (): HTMLAppSocialCardElement;
     };
+    interface HTMLAppSocialItemElement extends Components.AppSocialItem, HTMLStencilElement {
+    }
+    var HTMLAppSocialItemElement: {
+        prototype: HTMLAppSocialItemElement;
+        new (): HTMLAppSocialItemElement;
+    };
     interface HTMLAppSummaryCardElement extends Components.AppSummaryCard, HTMLStencilElement {
     }
     var HTMLAppSummaryCardElement: {
@@ -62,6 +71,7 @@ declare global {
         "app-root": HTMLAppRootElement;
         "app-showcase": HTMLAppShowcaseElement;
         "app-social-card": HTMLAppSocialCardElement;
+        "app-social-item": HTMLAppSocialItemElement;
         "app-summary-card": HTMLAppSummaryCardElement;
     }
 }
@@ -76,6 +86,9 @@ declare namespace LocalJSX {
     }
     interface AppSocialCard {
     }
+    interface AppSocialItem {
+        "icon"?: 'discord'|'steam';
+    }
     interface AppSummaryCard {
     }
     interface IntrinsicElements {
@@ -84,6 +97,7 @@ declare namespace LocalJSX {
         "app-root": AppRoot;
         "app-showcase": AppShowcase;
         "app-social-card": AppSocialCard;
+        "app-social-item": AppSocialItem;
         "app-summary-card": AppSummaryCard;
     }
 }
@@ -96,6 +110,7 @@ declare module "@stencil/core" {
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "app-showcase": LocalJSX.AppShowcase & JSXBase.HTMLAttributes<HTMLAppShowcaseElement>;
             "app-social-card": LocalJSX.AppSocialCard & JSXBase.HTMLAttributes<HTMLAppSocialCardElement>;
+            "app-social-item": LocalJSX.AppSocialItem & JSXBase.HTMLAttributes<HTMLAppSocialItemElement>;
             "app-summary-card": LocalJSX.AppSummaryCard & JSXBase.HTMLAttributes<HTMLAppSummaryCardElement>;
         }
     }
