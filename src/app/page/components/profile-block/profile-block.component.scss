@@ -1,0 +1,24 @@
+:host {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.about-title {
+  display: block;
+  background-color: var(--grid-item-background-color-accent);
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+.image-container {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: var(--grid-item-background-color-accent);
+  margin-bottom: var(--base-element-distance);
+  display: flex;
+  width: 100%;
+}

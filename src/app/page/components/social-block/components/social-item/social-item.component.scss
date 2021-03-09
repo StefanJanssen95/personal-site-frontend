@@ -1,0 +1,20 @@
+$spacing: 1em;
+
+.container {
+  padding: $spacing;
+  margin: $spacing 0;
+  background-color: var(--grid-item-background-color-accent);
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+}
+
+.account-name{
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.logo {
+  max-height: 2em;
+  margin-left: $spacing;
+}

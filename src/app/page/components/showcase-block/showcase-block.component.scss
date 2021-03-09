@@ -1,0 +1,16 @@
+:host {
+  --total-items: 6;
+  --columns: 3;
+  --rows: calc(var(--total-items) / var(--columns));
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto repeat(var(--rows), 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.showcase {
+  background-color: var(--grid-item-background-color-accent);
+}

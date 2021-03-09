@@ -1,0 +1,14 @@
+:host {
+  width: 100%;
+  display: block
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: var(--highlight-color-1);
+  padding: .3em;
+  color: var(--font-color-alternative);
+  letter-spacing: .3em;
+  font-weight: bold;
+}

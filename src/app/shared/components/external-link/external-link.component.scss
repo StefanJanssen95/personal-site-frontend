@@ -1,0 +1,23 @@
+a {
+  color: var(--page-font-color);
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: var(--highlight-color-1)
+  }
+
+  &:focus {
+    outline: none;
+    text-decoration: underline;
+  }
+}
+
+.icon {
+  margin-left: .2em;
+  width: 1em;
+  height: 1em;
+}

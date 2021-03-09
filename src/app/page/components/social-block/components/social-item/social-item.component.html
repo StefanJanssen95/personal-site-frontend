@@ -1,0 +1,13 @@
+<div class="container">
+  <span class="account-name">
+    <ng-container *ngIf="accountData.link != null; else accountName">
+      <sj-external-link [href]="accountData.link">
+        <ng-container *ngTemplateOutlet="accountName"></ng-container>
+      </sj-external-link>
+    </ng-container>
+    <ng-template #accountName>{{accountData.name}}</ng-template>
+  </span>
+  <!-- TODO: fix alt to contain name instead of enum value -->
+  <!-- TODO: move logoUrl to pipe for reuse -->
+  <img class="logo" [src]="logoUrl" [alt]="accountData.platform">
+</div>

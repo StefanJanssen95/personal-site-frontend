@@ -1,0 +1,25 @@
+[data-theme="dark"] {
+  --page-background-color: #212121;
+  --grid-item-background-color: #303030;
+  --grid-item-background-color-accent: #424242;
+
+  --page-font-color: #DEDEDE;
+  --font-color-alternative: #212121;
+
+  --highlight-color-1: #01D1E5;
+  --highlight-color-2: #BADA55;
+  --highlight-color-3: #DO69EE;
+}
+
+[data-theme="light"] {
+  --page-background-color: #A1A1A1;
+  --grid-item-background-color: #B0B0B0;
+  --grid-item-background-color-accent: #C2C2C2;
+
+  --page-font-color: #212121;
+  --font-color-alternative: #DEDEDE;
+
+  --highlight-color-1: #617;
+  --highlight-color-2: #BADA55;
+  --highlight-color-3: #DO69EE;
+}
